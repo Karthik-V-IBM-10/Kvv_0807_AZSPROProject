@@ -1,0 +1,17 @@
+version: "1.0"
+projectName: Kvv_0807_AZSPROProject
+runtimes:
+- runtimeAlias: kvv_0807_AZSPRO
+  assets:
+  - name: tppWorkflow
+    type: workflow
+    uid: fl30fafb22dac00388cce618
+    stepId: a1
+    reference: services:add3Ints
+- runtimeAlias: Cloud Designtime
+  assets:
+  - name: tppWorkflow
+    type: workflow
+    uid: fl30fafb22dac00388cce618
+    stepId: a0
+    reference: services:add3Ints
