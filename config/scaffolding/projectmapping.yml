@@ -8,6 +8,10 @@ runtimes:
     uid: fl30fafb22dac00388cce618
     stepId: a1
     reference: services:add3Ints
+  - name: fld_1725971755_stage00.projects.fl5ed3d369acb5e8ed1eb072.integrations:sfTPP
+    type: flow
+    stepId: /0
+    reference: fld_1725971755_stage00.projects.fl5ed3d369acb5e8ed1eb072.WmPackageServiceProvider.SIQACloudStreamsTests:connetorOperations
 - runtimeAlias: Cloud Designtime
   assets:
   - name: tppWorkflow
