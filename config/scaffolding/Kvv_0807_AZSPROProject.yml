@@ -32,8 +32,14 @@ packages:
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: WmSalesforceRESTProvider
+  version: 10.7.0.0.198
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
+- name: SIQACloudStreamsTests
+  gitServerName: SIQA_KVV_IBM
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: Karthik-V-IBM-10
+  gitBranch: main
 services:
 - serviceName: project.kvv_0807_azspro.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:restAcc
   packages:
@@ -51,8 +57,12 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
   - name: WmSalesforceRESTProvider
     version: 10.7.0.0.198
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.kvv_0807_azspro.integrations:Copy_refdaf
   packages:
   - name: Kvv_0807_AZSPROProject
@@ -69,8 +79,12 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
   - name: WmSalesforceRESTProvider
     version: 10.7.0.0.198
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.kvv_0807_azspro.referencedata:ref1
   packages:
   - name: Kvv_0807_AZSPROProject
@@ -87,8 +101,12 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
   - name: WmSalesforceRESTProvider
     version: 10.7.0.0.198
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.kvv_0807_azspro.integrations:JMSFlowTest
   packages:
   - name: Kvv_0807_AZSPROProject
@@ -105,8 +123,12 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
   - name: WmSalesforceRESTProvider
     version: 10.7.0.0.198
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: publisher:publisher
   packages:
   - name: JMSTest
@@ -131,8 +153,12 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
   - name: WmSalesforceRESTProvider
     version: 10.7.0.0.198
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: jms2wayssl_publisher:jms2wayssl_publisher
   packages:
   - name: JMS2waySSL
@@ -153,8 +179,12 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
   - name: WmSalesforceRESTProvider
     version: 10.7.0.0.198
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: SSL_JDBC_Test.services:getSSLandCloseConn
   packages:
   - name: SSL_JDBC_Test
@@ -205,15 +235,63 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
   - name: WmSalesforceRESTProvider
     version: 10.7.0.0.198
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: project.kvv_0807_azspro.integrations:sfREST
+  packages:
+  - name: Kvv_0807_AZSPROProject
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.198
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: project.kvv_0807_azspro.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.operations.actions:restTest
+  packages:
+  - name: Kvv_0807_AZSPROProject
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.198
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 configurationVariables:
   ? cloudstreamsconnection.project..kvv_0807_azspro..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:restAcc.cx.grant_type
   : refresh_token
   ? cloudstreamsconnection.project..kvv_0807_azspro..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:restAcc.oauth_v20.authorizationServerUrl
   : https://login.salesforce.com/services/oauth2/authorize
   ? cloudstreamsconnection.project..kvv_0807_azspro..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:restAcc.oauth.accessToken
-  : "{AES}7vZbWzyLRu2KZ5z191Zgwdr7/M+VfooozU57fC//O0ikGXDPP9dcYFAP6hjx2hgHQwlw6t+LVXL+gQZY/wWbUSK56iGb8pWddJ7MN1MVFstd27Uq2ZW9gko3I9DG/1XsjyscsfT0k2Iic2CULRlbRWmK1wuN3U1rA1B0VhuZoUw="
+  : "{AES}7vZbWzyLRu2KZ5z191ZgwXOMnesB5y+T4quXQ7nxFtXZNfNIgKfjRwtGuNoyxbDI1P0otlreNELNbCB8W8vRoiKUg8zjAl5Cl11+b4gCvypJ6+EZAFnTTwFd1vjeKIiCeHFE680oQ1ZYl5w4XUy82mmK1wuN3U1rA1B0VhuZoUw="
   ? cloudstreamsconnection.project..kvv_0807_azspro..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:restAcc.oauth_v20.authenticationServerUrl
   : https://login.salesforce.com/services/oauth2/token
   ? cloudstreamsconnection.project..kvv_0807_azspro..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:restAcc.oauth_v20.refreshToken
@@ -230,6 +308,8 @@ configurationVariables:
   : "10"
   ? cloudstreamsconnection.project..kvv_0807_azspro..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.keepAliveInterval
   : "300000"
+  ? iscloudstreamsconnectorservice.project..kvv_0807_azspro..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:restTest.virtualServiceName
+  : WmCloudStreams.RestVS
   ? cloudstreamsconnection.project..kvv_0807_azspro..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:restAcc.timeoutType
   : auto
   ? cloudstreamsconnection.project..kvv_0807_azspro..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.connectTimeout
@@ -252,6 +332,8 @@ configurationVariables:
   : "false"
   ? cloudstreamsconnection.project..kvv_0807_azspro..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.providerUrl
   : https://orgfarm-560b08beca-dev-ed.develop.my.salesforce.com
+  ? iscloudstreamsconnectorservice.project..kvv_0807_azspro..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:restTest.connectionAlias
+  : project.kvv_0807_azspro.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:restAcc
   ? cloudstreamsconnection.project..kvv_0807_azspro..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.sockBuffSize
   : "8192"
   ? cloudstreamsconnection.project..kvv_0807_azspro..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:restAcc.poolIncrementSize
