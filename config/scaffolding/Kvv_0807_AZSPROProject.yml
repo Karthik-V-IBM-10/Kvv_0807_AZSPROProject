@@ -20,7 +20,156 @@ packages:
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: SSL_JDBC_Test
+  version: "1.0"
   gitServerName: SIQA_KVV_IBM
   gitUrl: https://github.com/prabhakaribm
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
+- name: TPP_services_in_FCS
+  gitServerName: SIQA_KVV_IBM
+  gitUrl: https://github.com/Karthik-V-IBM-10
+  gitUsername: Karthik-V-IBM-10
+  gitBranch: main
+services:
+- serviceName: project.kvv_0807_azspro.integrations:Copy_refdaf
+  packages:
+  - name: Kvv_0807_AZSPROProject
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.kvv_0807_azspro.referencedata:ref1
+  packages:
+  - name: Kvv_0807_AZSPROProject
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.kvv_0807_azspro.integrations:JMSFlowTest
+  packages:
+  - name: Kvv_0807_AZSPROProject
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: publisher:publisher
+  packages:
+  - name: JMSTest
+    version: "1.0"
+- serviceName: pub.jms:send
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2105
+- serviceName: project.kvv_0807_azspro.integrations:JMS_JNDI_SSL
+  packages:
+  - name: Kvv_0807_AZSPROProject
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: jms2wayssl_publisher:jms2wayssl_publisher
+  packages:
+  - name: JMS2waySSL
+    version: "1.0"
+- serviceName: project.kvv_0807_azspro.integrations:SSL_JDBC_test
+  packages:
+  - name: Kvv_0807_AZSPROProject
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: SSL_JDBC_Test.services:getSSLandCloseConn
+  packages:
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: pub.art.transaction:startTransaction
+  packages:
+  - name: WmART
+    version: 11.1.0.0.404
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: SSL_JDBC_Test.services:get_ssl
+  packages:
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: pub.art.transaction:commitTransaction
+  packages:
+  - name: WmART
+    version: 11.1.0.0.404
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: pub.art.connection:disableConnection
+  packages:
+  - name: WmART
+    version: 11.1.0.0.404
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.kvv_0807_azspro.integrations:refdaf
+  packages:
+  - name: Kvv_0807_AZSPROProject
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
